@@ -1,0 +1,232 @@
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #F8F5F5;
+
+  font-family: "Hammersmith One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
+.timer_container {
+  /* Frame 3 */
+  position: relative;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 30px;
+
+}
+
+.timer {
+  /* Frame 2 */
+  position: relative;
+  width: 380px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+
+  border-radius: 20px;
+
+  background: rgb(255, 23, 68);
+}
+
+.track {
+  stroke: white;
+  fill: none;
+
+}
+
+.progress {
+  fill: none;
+  stroke: white;
+  stroke-width: 10px;
+  transform: rotate(-90deg);
+  transform-origin: center;
+
+
+  /* Controls the percentage: 100%-1029 */
+  stroke-dasharray: 1260;
+  stroke-dashoffset: 630;
+}
+
+.clock_center_content {
+  /* Frame 5 */
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+
+.timer_control_buttons_container {
+  /* Frame 6 */
+  position: relative;
+  width: 184px;
+  height: 58px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 20px;
+}
+
+
+.add_button_container {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+
+/* POP up form */
+#overlay {
+  margin: 0%;
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: #999;
+  width: 100%;
+  height: 100vh;
+  opacity: 0.8;
+  z-index: 100;
+}
+
+#popup {
+  display: none;
+  position: absolute;
+  top: 50vh;
+  left: 50%;
+  background: #fff;
+  width: 500px;
+  margin-left: -250px;
+  /*Half the value of width to center div*/
+  margin-top: -250px;
+  /*Half the value of height to center div*/
+  z-index: 200;
+}
+
+#popupclose {
+  float: right;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.popupcontent {
+  padding: 10px;
+}
+
+#button {
+  cursor: pointer;
+}
+
+
+.popup_container {
+  /* Frame 10 */
+  position: relative;
+  width: 100%;
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  background: rgb(255, 255, 255);
+  padding-bottom: 30px;
+}
+
+.label_container {
+  position: relative;
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+}
+
+.label_input_container {
+  padding: 3px;
+  box-sizing: border-box;
+  border: 3px solid rgb(255, 23, 68);
+  border-radius: 12px;
+
+  background: rgb(255, 255, 255);
+}
+
+.label_container input {
+  outline: none;
+  border: none;
+}
+
+
+.all_time_container {
+  /* Frame 9 */
+  position: relative;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 25px;
+}
+
+.time_container {
+  /* Frame 7 */
+  position: relative;
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+}
+
+.time_input_container {
+  padding: 3px;
+  box-sizing: border-box;
+  border: 3px solid rgb(255, 23, 68);
+  border-radius: 12px;
+
+  background: rgb(255, 255, 255);
+}
+
+.time_container input {
+  width: 30px;
+  outline: none;
+  border: none;
+}
+
+.add_new_timer_button {
+  border-radius: 9px;
+  width: 200px;
+  height: 30px;
+  background: rgb(255, 23, 68);
+  border: none;
+}
