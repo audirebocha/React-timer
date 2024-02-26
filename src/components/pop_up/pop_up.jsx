@@ -36,21 +36,21 @@ export default function Pop_up(props) {
                         <div className="time_container">
                             <span>Hour</span>
                             <div className="time_input_container">
-                                <input type="number" value={hrs} onChange={e=>{set_hrs(e.target.value)}} />
+                                <input type="number" max={60} value={hrs} onChange={e=>{set_hrs(e.target.value)}} />
                             </div>
                         </div>
 
                         <div className="time_container">
                             <span>Min</span>
                             <div className="time_input_container">
-                                <input type="number" value={min} onChange={e=>{set_min(e.target.value)}} />
+                                <input type="number" max={60} value={min} onChange={e=>{set_min(e.target.value)}} />
                             </div>
                         </div>
 
                         <div className="time_container">
                             <span>Sec</span>
                             <div className="time_input_container">
-                                <input type="number" value={sec } onChange={e=>{set_sec(e.target.value)}} />
+                                <input type="number" max={60} value={sec } onChange={e=>{set_sec(e.target.value)}} />
                             </div>
                         </div>
                     </div>
